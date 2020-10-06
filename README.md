@@ -8,9 +8,10 @@
 
 
 
-- UI : **Jihusishe Dashboard** (Free Version) provided by **[Creative-Tim](https://www.creative-tim.com/)**
+- UI : **Jihusishe Dashboard**  
+
 - [Codebase]
- version v1.0.2 -
+ version v1.0.0 -
 - SQLite Database, Django Native ORM
 - Modular design, clean code-base
 - Session-Based Authentication, Forms validation
