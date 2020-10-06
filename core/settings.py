@@ -21,7 +21,7 @@ DEBUG = config('DEBUG', default=False)
 
 # load production server from .env
 # 'localhost', '0.0.0.0', , '127.0.0.1' config('SERVER', default='127.0.0.1')
-ALLOWED_HOSTS = ['165.227.142.188']
+ALLOWED_HOSTS = ['46.101.231.93']
 
 # Application definition
 
