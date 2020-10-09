@@ -1,5 +1,5 @@
 {% extends 'base.html' %}
-
+{% load static %}
 {% block stylesheet %}
   <style>
     body {
@@ -9,7 +9,8 @@
 {% endblock %}
 
 {% block body %}
-  <div class="container">
+<br><br><br><br>
+  <div class="container" style="box-shadow: -2px 3px 25px -3px rgba(255, 0, 0, 0.384);">
     <h1 class="logo mt-4 text-center">JIHUSISHE</h1>
     <div class="row justify-content-center">
       {% block content %}{% endblock %}

@@ -37,10 +37,12 @@ def dashboard(request):
         .select_related('campaign', 'subscriber__mailing_list') \
         .filter(activity_type__in={ActivityTypes.SUBSCRIBED, ActivityTypes.UNSUBSCRIBED}) \
         .order_by('-date')[:50]
-    return render(request, 'core/dashboard.html', {
+    return render(request, 'pages/dashboardnew.html', {
         'menu': 'dashboard',
         'activities': activities,
-        'drafts': campaigns
+        'drafts': campaigns,
+        'local_css_urls' : django_settings.SB_ADMIN_CLIENT_CSS_LIBRARY_URLS,
+        'local_js_urls' : django_settings.SB_ADMIN_CLIENT_JS_LIBRARY_URLS
     })
 
 @login_required
