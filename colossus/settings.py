@@ -54,9 +54,14 @@ ROOT_URLCONF = 'colossus.urls'
 WSGI_APPLICATION = 'colossus.wsgi.application'
 
 DATABASES = {
-    'default': dj_database_url.config(
-        default=config('DATABASE_URL', default='sqlite:///%s' % os.path.join(BASE_DIR, 'db.sqlite3'))
-    )
+    "default": {
+        "ENGINE": "django.db.backends.postgresql_psycopg2",
+        "NAME": "jihusishedb",
+        "USER": "seenseen",
+        "PASSWORD": "seenseen",
+        "HOST": "localhost",
+        "PORT": " 5432",
+    }
 }
 
 INTERNAL_IPS = [
